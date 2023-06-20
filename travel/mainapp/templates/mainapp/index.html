@@ -1,0 +1,341 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+    <!--Intro start-->
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <h1 class="intro_title">
+                    СОБИРАЙ ЧЕМОДАН!<br>
+                    А ОСТАЛЬНОЕ МЫ ВОЗЬМЕМ<br>
+                    НА СЕБЯ</h1>
+                <p class="intro_subtitle">Независимо от того, в какую точку мира<br>
+                    вы хотите отправиться, мы поможем вам добраться туда</p>
+                <form class="search_form">
+                    <fieldset class="search-form_wrap">
+                        <p class="search-form_info">
+                            <input type="text" name="user-like-to-do" class="search-form_field"
+                                   placeholder="Чем вы хотите заняться?">
+                            <input id="about" type="text" name="user-like-to-go" class="search-form_field"
+                                   placeholder="Куда вы хотите поехать?">
+                            <button type="submit" class="search-form_submit">ПОИСК</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--Intro end-->
+    <!--Benefits start-->
+    <section class="benefits">
+        <div class="benefits_wrap">
+            <h2 class="benefits_title">ПОЧЕМУ ИМЕННО МЫ?</h2>
+            <div class="benefits_cards">
+                <div class="benefits_card">
+                    <div class="benefits_card-pic">
+                        <img src="{% static 'img/iii1.png' %}" alt="Добро пожаловать в NEGA" class="benefits_card-thumb">
+                        <h3 class="benefits_card-title">Начните покорять мир с нами</h3>
+                        <p class="benefits_card-desc">Мы можем со скидкой оформить любой тип визы, который необходим Вам
+                            для выезда за границу.</p>
+
+
+                        <!-- HTML модального окна -->
+                        <div id="openModal" class="modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">МЫ МОЖЕМ СО СКИДКОЙ ОФОРМИТЬ ЛЮБОЙ ВИД ВИЗЫ, КОТОРЫЙ
+                                            НЕОБХОДИМ ВАМ ДЛЯ ВЫЕЗДА ЗА ГРАНИЦУ</h3>
+                                        <a href="#close" title="Закрыть" class="close">×</a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="Content">
+                                            <div class="content">
+                                                <div class="first-text">
+                                                    <p class="zag">Сколько стоит сделать визу через туристическое
+                                                        агентство?</p>
+                                                    <p class="text">
+                                                        Граждане РФ при оформлении туристической шенгенской<br>
+                                                        визы должны оплатить консульский сбор в размере 35 евро.<br>
+                                                        Сбор оплачивается вне зависимости от того, как оформляется<br>
+                                                        виза.Стоимость услуг туристических агентств составляет<br>
+                                                        70-140 евро. При расчете стоимости шенгенской визы в 2022<br>
+                                                        году учитывайте траты на медицинскую страховку. Средняя<br>
+                                                        стоимость страховки составляет 1 евро в сутки.</p>
+                                                </div>
+                                                <div class="second-text">
+                                                    <p class="zag2">Преимущества оформления через турфирму:</p>
+                                                    <p class="text2">Часть документов оформляют сами агенты.<br>
+                                                        Билеты на самолет и бронь в гостинице оформляет агентство.<br>
+                                                        Нет необходимости стоять в очередях.<br>
+                                                        Если поездка планируется впервые, не стоит бояться, что вы<br>
+                                                        что-то забудете.<br>
+                                                        Срок оформления визы быстрее, чем при самостоятельном<br>
+                                                        оформлении.<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="travel">
+                                                <img src="../img/svg/undraw_travel_mode_re_2lxo.svg" alt=""
+                                                     class="travel-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HTML кнопки -->
+
+
+                        <a href="#openModal" class="benefits_card-more">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+                <div class="benefits_card">
+                    <img src="{% static 'img/iii2.png' %}" alt="Надежность" class="benefits_card-thumb">
+                    <h3 class="benefits_card-title">Надежность</h3>
+                    <p class="benefits_card-desc">Честность и четкость в работе привела нас на высокие позиции в
+                        рейтингах ведущих туроператоров.</p>
+
+
+                    <!-- HTML модального окна -->
+                    <div id="openModal-2" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">ЧЕСТНОСТЬ И ЧЕТКОСТЬ В РАБОТЕ ПРИВЕЛА НАС НА ВЫСОКИЕ ПОЗИЦИИ
+                                        В РЕЙТИНГАХ ВЕДУЩИХ ТУРОПЕРАТОРОВ</h3>
+                                    <a href="#close" title="Закрыть" class="close">×</a>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Content">
+                                        <div class="content">
+                                            <div class="first-text">
+                                                <p class="zag">Наши сотрудники – наша гордость.</p>
+                                                <p class="text">
+                                                    Нет предела совершенству! И мы стремимся становиться лучше
+                                                    для Вас!
+                                                    Наши менеджеры регулярно обучаются по различным
+                                                    направлениям и проходят аттестацию, совершенствуют свои знания
+                                                    и навыки, участвуя в семинарах и ознакомительных турах.
+                                                    Всё это и человеческое искреннее отношение к своей работе позволяет
+                                                    нам
+                                                    повышать уровень обслуживания с каждым днем!</p>
+                                            </div>
+                                            <div class="second-text">
+                                                <p class="zag2">Отдыхайте сейчас, а платите потом.</p>
+                                                <p class="text2">Глаза горят, когда находишь тот тур, о котором
+                                                    грезил, но не всегда получается единовременно найти средства
+                                                    для долгожданной поездки. Мы позаботились и об этом – в наших
+                                                    офисах Вы имеете возможность приобрести тур в беспроцентную
+                                                    рассрочку
+                                                    на 4 месяца без переплаты! Удобно, быстро, решение банка в течении 5
+                                                    минут!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="travel">
+                                            <img src="../img/svg/undraw_travel_mode_re_2lxo.svg" alt=""
+                                                 class="travel-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HTML кнопки -->
+
+
+                    <a href="#openModal-2" class="benefits_card-more">ПОДРОБНЕЕ</a>
+                </div>
+                <div class="benefits_card">
+                    <img src="{% static 'img/iii3.png' %}" alt="Открытость" class="benefits_card-thumb">
+                    <h3 class="benefits_card-title">Открытость</h3>
+                    <p class="benefits_card-desc">Вся информация о сотрудниках открыта, вы можете написать любому
+                        понравившемуся сотруднику.</p>
+
+
+                    <!-- HTML модального окна -->
+                    <div id="openModal-3" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">ВСЯ ИНФОРМАЦИЯ О СОТРУДНИКАХ ОТКРЫТА ВЫ МОЖЕТЕ НАПИСАТЬ
+                                        ЛЮБОМУ ПОНРАВИВШЕМУСЯ СОТРУДНИКУ</h3>
+                                    <a href="#close" title="Закрыть" class="close">×</a>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Content">
+                                        <div class="content">
+                                            <div class="first-text">
+                                                <p class="zag">Сколько стоит сделать визу через туристическое
+                                                    агентство?</p>
+                                                <p class="text">
+                                                    Граждане РФ при оформлении туристической шенгенской визы должны
+                                                    оплатить консульский сбор в размере 35 евро. Сбор оплачивается вне
+                                                    зависимости от того, как оформляется виза.Стоимость услуг
+                                                    туристических агентств
+                                                    составляет 70-140 евро. При расчете стоимости шенгенской визы в 2022
+                                                    году учитывайте траты
+                                                    на медицинскую страховку. Средняя стоимость страховки составляет 1
+                                                    евро в сутки.
+                                                </p>
+                                            </div>
+                                            <div class="second-text">
+                                                <p class="zag2">Преимущества оформления через турфирму:</p>
+                                                <p class="text2">
+                                                    Часть документов оформляют сами агенты.<br>
+                                                    Билеты на самолет и бронь в гостинице оформляет агентство.<br>
+                                                    Нет необходимости стоять в очередях.<br>
+                                                    Если поездка планируется впервые, не стоит бояться, что вы<br>
+                                                    что-то забудете.<br>
+                                                    Срок оформления визы быстрее, чем при самостоятельном<br>
+                                                    оформлении.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="travel">
+                                            <img src="../img/svg/undraw_travel_mode_re_2lxo.svg" alt=""
+                                                 class="travel-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HTML кнопки -->
+
+
+                    <a id="top-tours" href="#openModal-3" class="benefits_card-more">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Benefits end-->
+
+
+    <!--Places start-->
+    <section class="places">
+        <div class="wrapper-full">
+            <div class="places_caption">
+                <h2 class="places-title section-title">Популярные туры</h2>
+            </div>
+
+
+            <div class="places_cards">
+
+
+                {% for item in tour_max %}
+                    <figure class="places_card places_cards_size_lg">
+                        <img src="{{ item.image.url }}" class="places_card-pic places_card-pic_size_lg">
+                        <figcaption class="places_card-title">
+                            {{ item.name|capfirst }}
+                        </figcaption>
+                        <a href="{% url 'mainapp:select_tour' item.id %}" class="places_card-link"></a>
+                    </figure>
+                {% endfor %}
+
+
+                {% for item in tour_min %}
+                    <figure class="places_card places_cards_size_sm">
+                        <img src="{{ item.image.url }}" class="places_card-pic places_card-pic_size_sm">
+                        <figcaption class="places_card-title">
+                            {{ item.name|capfirst }}
+                        </figcaption>
+                        <a href="{% url 'mainapp:select_tour' item.id %}" class="places_card-link"></a>
+                    </figure>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+    <!--Places end-->
+
+
+    <!-- Form start -->
+    <div class="form">
+        <div class="wrapper-full">
+            <h1 class="ost">Оставьте заявку</h1>
+
+                    <a href="{% url 'mainapp:feedback' %}" class="order">
+                    <button type="submit" class="search-form_submit">ЗАКАЗАТЬ ТУР</button>
+                </a>
+
+        </div>
+    </div>
+    <!-- Form end -->
+
+
+    <!-- Top start -->
+    <section class="top">
+        <div class="wrapper-full">
+            <h2 id="news" class="top-title section-title">Новости</h2>
+            <div class="top_cards">
+                {% for item in news %}
+
+                    <div class="top_card">
+                        <div class="top_card-pic">
+                            <img src="{{ item.image.url }}" alt="{{ item.name|capfirst }}" class="top_card-thumb">
+                            <div class="top_card-stats">
+                                <h3 class="top_card-title">{{ item.name|capfirst }}</h3>
+                            </div>
+                        </div>
+                        <p class="top_card-desc">
+                            {{ item.description|capfirst }}
+                        </p>
+                        <a href="{% url 'mainapp:select_news' item.id %}" class="top_card-more">ПОДРОБНЕЕ</a>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map start -->
+    <section class="places">
+        <div class="wrapper-full">
+            <div class="places_caption">
+                <h2 class="places-title section-title">Мы находимся здесь</h2>
+            </div>
+            <div class="map">
+                <div class="about">
+                    <h2 class="map-title">Наш главный офис находится в городе Курган, ул. Гоголя 9.</h2>
+                    <ul class="worktime">Часы работы:<br>
+
+                        <br>
+                        <li>
+                            Пн - Пт: 10:00 - 19:00
+                        </li>
+
+                        <li>
+                            Пт - Сб: 11:00 - 14:00
+                        </li>
+
+                        <li>
+                            Вс: Закрыто
+                        </li>
+                    </ul>
+                </div>
+                <div class="mapp">
+                    <script type="text/javascript" charset="utf-8" async
+                    <iframe src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aebc75b008e42123ba495029cfc5e51c8a3fdd818f20dfba8b1e31ae35a6d4126&amp;width=702&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+                            width="100%" height="100%" frameborder="0"></iframe>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map end -->
+    </main>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <!--header end-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    </body>
+    </html>
+{% endblock %}

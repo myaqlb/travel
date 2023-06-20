@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+              rel="stylesheet">
+
+        <link rel="icon" href="{% static 'img/svg/NEGA.svg' %}" type="image/svg" sizes="64x64">
+        <title>Начните покорять мир вместе с нами</title>
+    </head>
+    <body>
+    <!--header start-->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="#" class="header_logo-link">
+                        <img src="{% static 'img/svg/NEGA.svg' %}" alt="Собирай чемодан!" class="header-logo-pic">
+                    </a>
+                </div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="{% url 'mainapp:index' %}" class="header_link">Главная</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="{% url 'mainapp:index' %}#about" class="header_link">О нас</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="{% url 'mainapp:index' %}#top-tours" class="header_link">Популярные туры</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="{% url 'mainapp:index' %}#zayavka" class="header_link">Оставить заявку</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="{% url 'mainapp:index' %}#news" class="header_link">Новости</a>
+                        </li>
+                    </ul>
+                    <div class="header_nav-close">
+                        <span class="header_nav-close-line"></span>
+                        <span class="header_nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header_burger burger">
+                    <span class="burger_line burger_line_first"></span>
+                    <span class="burger_line burger_line_second"></span>
+                    <span class="burger_line burger_line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Intro start-->
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer class="footer">
+        <div class="wrapper1">
+            <div class="footer-item">
+                <div class="footer_logo">
+                    <img src="{% static 'img/svg/NEGA-big.svg' %}" alt="nega" class="footer_logo-pic">
+                </div>
+                <nav class="footer_nav">
+                    <ul class="footer_menu">
+                        <li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Компания</h3>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#" class="footer_menu-link">Главная</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#about" class="footer_menu-link">О нас</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#top-tours" class="footer_menu-link">Популярные туры</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#news" class="footer_menu-link">Новости</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer_menu">
+                        <li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Туры</h3>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="hawai.html" class="footer_menu-link">Гавайи</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="cuba.html" class="footer_menu-link">Куба</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="greece.html" class="footer_menu-link">Греция</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="maldives.html" class="footer_menu-link">Мальдивы</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer_menu">
+                        <li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Социальные сети</h3>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#" class="footer_menu-link">ВКонтакте</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#" class="footer_menu-link">Instagram</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#" class="footer_menu-link">Twitter</a>
+                        </li>
+
+
+                        <li class="footer_menu-item">
+                            <a href="#" class="footer_menu-link">Youtube</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+    <!--header end-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    </body>
+</html>

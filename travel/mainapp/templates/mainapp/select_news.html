@@ -1,0 +1,39 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+        <link href="{% static 'css/news-style.css' %}" rel="stylesheet">
+    <style>
+        .introlol {
+            background: url("{{ news.backround.url }}") no-repeat center;
+            background-size: cover;
+            padding-top: 263px;
+            padding-bottom: 223px;
+        }
+    </style>
+
+
+    <main class="main">
+        <section class="introlol">
+            <div class="wrapper">
+                <h1 class="intro_title">
+                    {{ news.name|capfirst }}
+                </h1>
+            </div>
+        </section>
+        <!--Intro end-->
+
+
+        <!--Island start-->
+        <section class="places">
+            <div class="wrapper-full">
+                <div class="Island_caption">
+                    <h2 id="opis" class="Island-title section-title">{{ news.name|capfirst }}</h2>
+                    <h3 class="island-desc">{{ news.detailed_desc|linebreaks }}</h3>
+                </div>
+            </div>
+        </section>
+        <!--Island end-->
+
+    </main>
+{% endblock %}

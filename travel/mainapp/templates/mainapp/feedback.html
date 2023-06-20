@@ -1,0 +1,25 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="main">
+        <section class="intro1">
+            <div class="wrapper">
+                <div class="form">
+                    <div class="wrapper-full">
+                        <form class="form2" method="post">
+                            <h1 class="ost">Оставьте заявку</h1>
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <center>
+                                <button class="btn_for-form">Отправить</button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+{% endblock %}
